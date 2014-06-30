@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/">
+        <file>sounds/critical.mp3</file>
+        <file>sounds/warning.mp3</file>
+    </qresource>
+</RCC>

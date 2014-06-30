@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/">
+        <file>qml/iqtemp/FlowListView.qml</file>
+        <file>qml/iqtemp/MimicPanel.qml</file>
+    </qresource>
+</RCC>

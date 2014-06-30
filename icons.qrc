@@ -1,0 +1,23 @@
+<RCC>
+    <qresource prefix="/">
+        <file>icons/arrow-090.png</file>
+        <file>icons/arrow-270.png</file>
+        <file>icons/thermometer--minus.png</file>
+        <file>icons/thermometer--pencil.png</file>
+        <file>icons/thermometer--plus.png</file>
+        <file>icons/network-ip.png</file>
+        <file>icons/thermometer-high.png</file>
+        <file>icons/thermometer-low.png</file>
+        <file>icons/thermometer-wery-high.png</file>
+        <file>icons/thermometer-wery-low.png</file>
+        <file>icons/thermometer.png</file>
+        <file>icons/card.png</file>
+        <file>icons/ui-text-field.png</file>
+        <file>icons/water.png</file>
+        <file>icons/clock-network.png</file>
+        <file>icons/tick.png</file>
+        <file>icons/qt-icon.png</file>
+        <file>icons/question-white.png</file>
+        <file>icons/dashboard_icon&amp;48.png</file>
+    </qresource>
+</RCC>

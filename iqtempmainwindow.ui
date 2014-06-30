@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>IQTempMainWindow</class>
+ <widget class="QMainWindow" name="IQTempMainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>IqTemp</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="icons.qrc">
+    <normaloff>:/icons/dashboard_icon&amp;48.png</normaloff>:/icons/dashboard_icon&amp;48.png</iconset>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="tab">
+       <attribute name="title">
+        <string>Table View</string>
+       </attribute>
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <item>
+         <widget class="QTableView" name="tempTableView">
+          <property name="selectionMode">
+           <enum>QAbstractItemView::SingleSelection</enum>
+          </property>
+          <property name="selectionBehavior">
+           <enum>QAbstractItemView::SelectRows</enum>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab_2">
+       <attribute name="title">
+        <string>Mimic Panel View</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="mimicPanelLayout"/>
+      </widget>
+      <widget class="QWidget" name="tab_3">
+       <attribute name="title">
+        <string>Log</string>
+       </attribute>
+       <layout class="QHBoxLayout" name="horizontalLayout_2">
+        <item>
+         <widget class="QPlainTextEdit" name="logPlainTextEditor">
+          <property name="readOnly">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QToolBar" name="editingToolBar">
+   <property name="windowTitle">
+    <string>Editing</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QToolBar" name="helpToolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <action name="actionAddSensor">
+   <property name="icon">
+    <iconset resource="icons.qrc">
+     <normaloff>:/icons/thermometer--plus.png</normaloff>:/icons/thermometer--plus.png</iconset>
+   </property>
+   <property name="text">
+    <string>Add Sensor</string>
+   </property>
+   <property name="toolTip">
+    <string>Add New Sensor</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+N</string>
+   </property>
+  </action>
+  <action name="actionRemoveSensor">
+   <property name="icon">
+    <iconset resource="icons.qrc">
+     <normaloff>:/icons/thermometer--minus.png</normaloff>:/icons/thermometer--minus.png</iconset>
+   </property>
+   <property name="text">
+    <string>Remove Sensor</string>
+   </property>
+   <property name="toolTip">
+    <string>Remove Current Sensor</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+R</string>
+   </property>
+  </action>
+  <action name="actionEditCurrentSensor">
+   <property name="icon">
+    <iconset resource="icons.qrc">
+     <normaloff>:/icons/thermometer--pencil.png</normaloff>:/icons/thermometer--pencil.png</iconset>
+   </property>
+   <property name="text">
+    <string>Edit Current Sensor</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+E</string>
+   </property>
+  </action>
+  <action name="actionMoveSensorUp">
+   <property name="icon">
+    <iconset resource="icons.qrc">
+     <normaloff>:/icons/arrow-090.png</normaloff>:/icons/arrow-090.png</iconset>
+   </property>
+   <property name="text">
+    <string>Move Sensor Up</string>
+   </property>
+   <property name="toolTip">
+    <string>Move Current Sensor Up</string>
+   </property>
+  </action>
+  <action name="actionMoveSensorDown">
+   <property name="icon">
+    <iconset resource="icons.qrc">
+     <normaloff>:/icons/arrow-270.png</normaloff>:/icons/arrow-270.png</iconset>
+   </property>
+   <property name="text">
+    <string>Move Sensor Down</string>
+   </property>
+   <property name="toolTip">
+    <string>Move Current Sensor Down</string>
+   </property>
+  </action>
+  <action name="actionAbout">
+   <property name="icon">
+    <iconset resource="icons.qrc">
+     <normaloff>:/icons/question-white.png</normaloff>:/icons/question-white.png</iconset>
+   </property>
+   <property name="text">
+    <string>About</string>
+   </property>
+   <property name="toolTip">
+    <string>About Application</string>
+   </property>
+   <property name="shortcut">
+    <string>F1</string>
+   </property>
+  </action>
+  <action name="actionAboutQt">
+   <property name="icon">
+    <iconset resource="icons.qrc">
+     <normaloff>:/icons/qt-icon.png</normaloff>:/icons/qt-icon.png</iconset>
+   </property>
+   <property name="text">
+    <string>About Qt</string>
+   </property>
+   <property name="toolTip">
+    <string>Show About Qt Dialog</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="icons.qrc"/>
+ </resources>
+ <connections/>
+</ui>
